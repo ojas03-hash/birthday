@@ -63,7 +63,7 @@ body {
 .garden-scene {
     width: 100vw;
     height: 100vh;
-    background: url('tree_background.jpg') no-repeat center center;
+    background: url('bg.jepg') no-repeat center center;
     background-size: cover;
     position: relative;
 }
@@ -112,4 +112,5 @@ body {
     border-radius: 15px;
     text-align: center;
     width: 80%;
+
 }
