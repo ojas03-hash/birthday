@@ -3,7 +3,6 @@ function initCelebration() {
     music.play().catch(() => {
         console.log("Autoplay blocked. Click anywhere to play.");
     });
-    startConfetti();
 }
 
 function startConfetti() {
@@ -45,3 +44,5 @@ function pop(t) {
     document.getElementById('pop-text').innerText = t;
     m.style.display = 'flex';
 }
+
+window.onload = startConfetti;
