@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Tree</title>
+</head>
+<body>
+    <div class="garden-scene">
+        <div class="tree-overlay">
+            <div class="hanging-frame" style="top:15%; left:15%;" onclick="pop('Sweet Memories')">
+                <img src="IMG_20190321_114056.jpg">
+            </div>
+            <div class="hanging-frame" style="top:10%; left:55%;" onclick="pop('The Big Day')">
+                <img src="2019-08-15-18-38-01-773.jpg">
+            </div>
+            <div class="hanging-frame" style="top:30%; left:35%;" onclick="pop('Laughter')">
+                <img src="20230510_190141.jpg">
+            </div>
+            <div class="hanging-frame" style="top:45%; left:10%;" onclick="pop('Adventure')">
+                <img src="20230510_190141.jpg">
+            </div>
+            <div class="hanging-frame" style="top:50%; left:60%;" onclick="pop('Together')">
+                <img src="DSC_0012.jpg">
+            </div>
+        </div>
+    </div>
+    <div id="pop-modal" class="modal" onclick="this.style.display='none'">
+        <div class="modal-content">
+            <p id="pop-text"></p>
+            <button class="mobile-btn">Close</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

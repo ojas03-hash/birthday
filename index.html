@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Birthday Surprise</title>
+</head>
+<body class="landing-body" onclick="initCelebration()">
+    <canvas id="confetti"></canvas>
+    <div class="hero">
+        <img src="C:\Users\OJAS TRIPATHI\Desktop\di\IMG_20180527_194246.jpg" class="profile-pic">
+        <h1>Happy Birthday!</h1>
+        <div class="gift-container">
+            <div class="gift" onclick="openGift(this, 'You are amazing!', 'gift1.jpg')">??</div>
+            <div class="gift" onclick="openGift(this, 'Best Friend!', 'gift2.jpg')">??</div>
+            <div class="gift" onclick="openGift(this, 'Keep Shining!', 'gift3.jpg')">??</div>
+        </div>
+        <button class="mobile-btn" onclick="window.location.href='gallery.html'">Enter the Garden</button>
+    </div>
+    <div id="gift-modal" class="modal" onclick="this.style.display='none'">
+        <div class="modal-content">
+            <img id="gift-img" src="" style="width:100%; border-radius:10px;">
+            <p id="gift-text"></p>
+        </div>
+    </div>
+    <audio id="song" loop>
+        <source src="happy-birthday.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html>
